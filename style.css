@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: "Red hat display";
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: hsl(225, 100%, 94%);
+    background-position-y: -77px;
+  
+}
+.container{
+    width: 400px;
+    margin:50px auto;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.photo img{
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    color: hsl(223, 47%, 23%);
+    font-size: 1.9em;
+    margin-top: 25px;
+    font-weight: 900;
+}
+.text p{
+    margin: 15px auto;
+    width: 80%;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+}
+.plan{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+.plan a:hover{
+    color: hsl(268, 23%, 55%);
+    text-decoration: none;
+}
+.number{
+    margin-left: -50px;
+    line-height: 1.7;
+}
+.number p{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.number span{
+    color: hsl(224, 23%, 55%);
+}
+.btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-1{
+    letter-spacing: .5px;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+    filter: drop-shadow(2px 15px 10px rgb(179, 179, 179));
+    transition: .3s ease-in-out;
+
+}
+.btn-1:hover{
+    background-color: hsl(235, 39%, 56%);
+}
+.btn-2{
+    cursor: pointer;
+    margin: 30px auto;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    background-color: white;
+    transition: .3s ease-in-out;
+}
+.btn-2:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 700px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-size:contain;
+        background-position-y: -66px;
+    }
+    .photo img{
+        width: 300px;
+    }
+    .container{
+        margin: 15px auto;
+        width: 300px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: .9em;
+    }
+    .plan{
+        width: 90%;
+        height: 70px;
+    }
+    .plan p{
+        font-size: .9em;
+        font-weight: 900;
+    }
+    .plan span{
+        font-size: .9em;
+    }
+    .plan a{
+        font-size: .9em;
+        font-weight: 700;
+    }
+    .number{
+        line-height: 1.4;
+        margin-left: -25px;
+    }
+    .btn-1{
+        width: 90%;
+    }
+   
+}
