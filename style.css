@@ -111,7 +111,10 @@ body{
         background-image: url(./images/pattern-background-mobile.svg);
         background-size:contain;
         background-position-y: -10px;
-        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
         
     }
     .photo img{
