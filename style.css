@@ -121,7 +121,6 @@ body{
         width: 300px;
     }
     .container{
-        margin: 70px auto;
         width: 300px;
     }
     .text h1{
@@ -157,10 +156,12 @@ body{
 }
 @media screen and (max-width:440px){
     body{
-        height: 100vh;
-        background-image: url(./images/pattern-background-mobile.svg);
-        background-size:contain;
-        background-position-y: -66px;
+        height: 844vpx;
+        background: url(./images/pattern-background-mobile.svg) ;
+        background-position-y: 0px;
+        background-size: 100% 155px;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
         display: flex;
         justify-content: center;
         align-items: center;
